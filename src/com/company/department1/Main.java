@@ -2,8 +2,9 @@ package com.company.department1;
 
 import com.company.department2.Piece;
 import com.company.department2.Rook;
+import com.company.exam.SecondQuestion;
+import com.company.exam.ThirdQuestion;
 
-import javax.swing.*;
 import java.util.Arrays;
 
 public class Main {
@@ -21,6 +22,9 @@ public class Main {
         int iVal4 = iVal1 - iVal2;
         int iVal5 = iVal1 * iVal2;
         int iVal6 = iVal1 / iVal2; //整除
+
+        int iVal7 = 9 % 2; //取余数
+        int iVal8 = 9 % 3;
 
 
         double dVal1;
@@ -140,9 +144,9 @@ public class Main {
         }
 
         int age = 230;
-        while (age < 0 || age >100) {
-            System.out.println("not between 0 and 100"); //死循环
-        }
+//        while (age < 0 || age >100) {
+//            System.out.println("not between 0 and 100"); //死循环
+//        }
 
         /**io**************************************************/
         //firstName = JOptionPane.showInputDialog("Enter first name");
@@ -152,7 +156,7 @@ public class Main {
         /**Stage**************************************************/
         //Stage1.main(args);
 
-        Stage2.main(args);
+        //Stage2.main(args);
 
         /**数组**************************************************/
         //初始化
@@ -187,6 +191,10 @@ public class Main {
         rook = new Rook(33,44);
 
         boolean isValidMove = rook.isValidMove(55,66);
+
+        /**试卷*****************************************************/
+        SecondQuestion.main(args);
+        ThirdQuestion.main(args);
 
     }
 }
