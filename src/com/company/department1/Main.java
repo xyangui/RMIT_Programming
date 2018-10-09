@@ -2,6 +2,7 @@ package com.company.department1;
 
 import com.company.department2.Piece;
 import com.company.department2.Rook;
+import com.company.exam.FourthQuestion;
 import com.company.exam.SecondQuestion;
 import com.company.exam.ThirdQuestion;
 
@@ -195,6 +196,7 @@ public class Main {
         /**试卷*****************************************************/
         SecondQuestion.main(args);
         ThirdQuestion.main(args);
+        FourthQuestion.main(args);
 
     }
 }
