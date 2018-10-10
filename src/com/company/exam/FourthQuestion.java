@@ -35,7 +35,8 @@ public class FourthQuestion {
     	   }
     	   
     	   if(isUnique) {
-    		   System.out.println(iArray[i] + " was unique");
+    		   //System.out.println(iArray[i] + " was unique");
+			   JOptionPane.showMessageDialog(null,iArray[i] + " was unique");
     	   }
        }
        
