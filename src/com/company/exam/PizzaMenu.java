@@ -1,5 +1,6 @@
 package com.company.exam;
 
+import javax.swing.*;
 import java.util.ArrayList;
 
 public class PizzaMenu {
@@ -24,22 +25,21 @@ public class PizzaMenu {
     }
 
     public void findPizza(String pizzaName){
-        if(currentNumPizza == maxNumPizza){
-            return;
-        }
 
         boolean notFound = true;
         for(Pizza pizza : pizzaArrayList){
 
             String currentPizzaName = pizza.getName();
             if(currentPizzaName.equals(pizzaName)){
-                System.out.println(pizza.getName() + pizza.getPrice());
+                //System.out.println(pizza.getName() + pizza.getPrice());
+                JOptionPane.showMessageDialog(null,pizza.getName() + pizza.getPrice());
                 notFound = false;
             }
         }
 
         if(notFound){
-            System.out.println("no such pizzas");
+            //System.out.println("no such pizzas");
+            JOptionPane.showMessageDialog(null,"no such pizzas");
         }
     }
 }
