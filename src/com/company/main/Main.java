@@ -1,7 +1,7 @@
-package com.company.department1;
+package com.company.main;
 
-import com.company.department2.Piece;
-import com.company.department2.Rook;
+import com.company.classandobject.Piece;
+import com.company.classandobject.Rook;
 import com.company.exam.FourthQuestion;
 import com.company.exam.SecondQuestion;
 import com.company.exam.ThirdQuestion;
@@ -12,11 +12,11 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /**数据类型**************************************************/
+        /**基本数据类型**************************************************/
         int iVal1 = 88;
         iVal1 = -9;
         iVal1 = 9;
-        //iVal1 = 9.9; //整型变量不能付值为小数
+        //iVal1 = 9.9; //整型变量不能赋值为小数
 
         int iVal2 = 3;
         int iVal3 = iVal1 + iVal2;
@@ -27,10 +27,9 @@ public class Main {
         int iVal7 = 9 % 2; //取余数
         int iVal8 = 9 % 3;
 
-
+        float fNum = 5.4f;
         double dVal1;
         dVal1 = 99.9;
-
 
         boolean isValid = true;
         isValid = false;
@@ -44,7 +43,6 @@ public class Main {
 
         char cVal1 = 'd';
 
-
         String str = "I am a String";
 
         String firstName = "Alan";
@@ -55,16 +53,14 @@ public class Main {
         System.out.println(fullName);
 
         /**类型转换**************************************************/
-        int iNum = Integer.parseInt("33");//字符串转整型
+        int iNum = Integer.parseInt("33");         //字符串转整型
         double dNum = Double.parseDouble( "33.3" );//字符串转double
 
-        String string = String.valueOf(33);
+        String string = String.valueOf(33);//整型转字符串
 
-        //Integer iNum = 3;
-        //String string = iNum.toString();//整型转字符串
-        //iNum = Integer.parseInt(string);//字符串转整型
-
-        //Float fNum = 5.4f;
+        Integer iNum2 = 3;
+        String string2 = iNum2.toString();//整型转字符串
+        iNum2 = Integer.parseInt(string2);//字符串转整型
 
         /**字符串**************************************************/
         String str11 = "str1";
@@ -74,12 +70,6 @@ public class Main {
         String str33 = new String("str1");
         boolean isEqual33 = str11 == str33;
         boolean isEqual44 = str11.equals(str33);
-
-
-
-
-
-
 
         /**if**************************************************/
         iVal1 = 88;
@@ -102,7 +92,6 @@ public class Main {
         boolean isTrue6 = false || true;
         boolean isTrue7 = true || false;
         boolean isTrue8 = false || false;
-
 
         if(iVal1 > 0 && iVal1 < 100){
             System.out.println("between 0 and 100");
@@ -167,12 +156,6 @@ public class Main {
         //firstName = JOptionPane.showInputDialog("Enter first name");
         //JOptionPane.showMessageDialog(null,"Welcome " + firstName + "!");
 
-
-        /**Stage**************************************************/
-        //Stage1.main(args);
-
-        //Stage2.main(args);
-
         /**数组**************************************************/
         //初始化
         int[] n1 = {3, 5, 9, 7, 4, 1};
@@ -197,10 +180,10 @@ public class Main {
         int maxAmount = Piece.BOARD_SIZE;// static 只能通过"类名."访问，属性和方法同理
 
         Piece piece = new Piece();
-        //int public_variable = piece.public_variable;       //包内可访问
+        int public_variable = piece.public_variable;       //包内可访问
         //int protected_variable = piece.protected_variable; //包内可访问
         //int default_variable = piece.default_variable;     //包内可访问
-        //int private_variable = piece.private_variable;   //包内不可访问
+        //int private_variable = piece.private_variable;     //包内不可访问
 
         Rook rook = new Rook();
         rook = new Rook(33,44);
@@ -211,6 +194,5 @@ public class Main {
         SecondQuestion.main(args);
         ThirdQuestion.main(args);
         FourthQuestion.main(args);
-
     }
 }

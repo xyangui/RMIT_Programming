@@ -39,7 +39,5 @@ public class FourthQuestion {
 			   JOptionPane.showMessageDialog(null,iArray[i] + " was unique");
     	   }
        }
-       
-		 
 	 }
 }

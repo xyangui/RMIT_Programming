@@ -34,6 +34,4 @@ public class ThirdQuestion {
 
         return result;
     }
-
-
 }

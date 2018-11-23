@@ -1,4 +1,4 @@
-package com.company.department2;
+package com.company.classandobject;
 
 public class Rook extends Piece {
 
