@@ -66,6 +66,15 @@ public class Main {
 
         //Float fNum = 5.4f;
 
+        /**字符串**************************************************/
+        String str11 = "str1";
+        String str22 = "str1";
+        boolean isEqual1 = str11 == str22;
+        boolean isEqual2 = str11.equals(str22);
+        String str33 = new String("str1");
+        boolean isEqual33 = str11 == str33;
+        boolean isEqual44 = str11.equals(str33);
+
 
         /**if**************************************************/
         iVal1 = 88;
@@ -175,8 +184,8 @@ public class Main {
             System.out.println(i);
         }
 
-        for(String str11 : strArray){
-            System.out.println(str11);
+        for(String str111 : strArray){
+            System.out.println(str111);
         }
 
         /**类-封装继承*****************************************************/
