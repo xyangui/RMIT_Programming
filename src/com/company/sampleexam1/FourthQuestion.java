@@ -1,4 +1,4 @@
-package com.company.exam;
+package com.company.sampleexam1;
 
 import javax.swing.*;
 

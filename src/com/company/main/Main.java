@@ -2,9 +2,9 @@ package com.company.main;
 
 import com.company.classandobject.Piece;
 import com.company.classandobject.Rook;
-import com.company.exam.FourthQuestion;
-import com.company.exam.SecondQuestion;
-import com.company.exam.ThirdQuestion;
+import com.company.sampleexam1.FourthQuestion;
+import com.company.sampleexam1.SecondQuestion;
+import com.company.sampleexam1.ThirdQuestion;
 
 import java.util.Arrays;
 
