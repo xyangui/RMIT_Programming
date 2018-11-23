@@ -193,6 +193,52 @@ public class Main {
         /**试卷*****************************************************/
         SecondQuestion.main(args);
         ThirdQuestion.main(args);
-        FourthQuestion.main(args);
+        //FourthQuestion.main(args);
+
+        /**激发兴趣*****************************************************/
+        int rowCount = 9;
+        interest1(rowCount);
+        interest2(rowCount);
+    }
+
+    public static void interest1(int rowCount){
+
+        int emptyNum = rowCount;
+
+        for (int i = 0; i < rowCount + 1; i++){
+
+            for (int j = 0; j < emptyNum; j++){
+                System.out.print(" ");
+            }
+
+            emptyNum--;
+
+            for (int j = 0; j < i * 2 + 1; j++){
+                System.out.print("1");
+            }
+            System.out.println(" ");
+        }
+    }
+
+    public static void interest2(int rowCount){
+
+        int emptyNum = rowCount;
+
+        for (int i = 0; i < rowCount; i++){
+
+            for (int j = 0; j < emptyNum; j++){
+                System.out.print(" ");
+            }
+
+            emptyNum--;
+
+            for (int j = 0; j < i + 1; j++){
+                System.out.print(j + 1);
+            }
+            for (int j = i; j > 0; j--){
+                System.out.print(j);
+            }
+            System.out.println(" ");
+        }
     }
 }
